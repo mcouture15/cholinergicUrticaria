@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+html {
+	font-family: 'Futura', sans-serif;
+}
+
+html,body {
+	margin: 0;
+	height: 100%;
+}
+
+h1 {
+	font-size: 20px;
+	color: #000;
+	font-weight: 400;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	color: #ccc;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	height: 100%;
+	width: 100%;
+}
+	main > section {
+		padding: 75px;
+	}
+		#home {
+			height: 100%;
+			margin-top: 0;
+			padding: 0;
+		}
+			#home > div {
+				height: 100%;
+				width: 100%;
+			}
+				#homePic {
+					position: absolute;
+					top: 0;
+					background: url('../images/background.jpg') no-repeat center center fixed;
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					background-size: cover;
+					background-position: 0px;
+				}
+				
+header {
+	position: fixed;
+	top: 0;
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	text-align: right;
+	padding: 20px;
+	z-index: 10;
+	font-size: 14px;
+}
+	#navBar {
+		color: #ccc;
+		margin-right: 40px;
+	}
+
+		#navBar li {
+			display: inline-block;
+			margin: 0 6px;
+		}
+		#navBar a {
+			-webkit-transition: 0.2s color linear;
+			-moz-transition: 0.2s color linear;
+			transition: 0.2s color linear;
+		}
+		#navBar a:hover {
+			color: #4C0000;
+		}
+
+footer {
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	z-index: 1;
+	font-size: 14px;
+}
+	
