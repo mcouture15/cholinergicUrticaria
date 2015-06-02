@@ -99,6 +99,39 @@ li {
 	#right:hover {
 		background: gray;
 	}
+#contact {
+	margin-right:40px;
+	float: right;
+}
+	
+html, body, #container { height: 100%; }
+body > #container { height: auto; min-height: 100%; }	
+
+ul#footer {
+ clear: both;
+ position: relative;
+ z-index: 1;
+ height: 3em;
+ margin-top: -3em;
+ font-size: 14px;
+ text-align: center;
+ padding: 10px 0 0 0;
+ background-color: black;
+ color: white;
+}
+
+#content { padding-bottom: 3em; }
+
+/*footer {
+	position: relative;
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	z-index: 1000;
+	font-size: 14px;
+	bottom: 0;
+}	*/
 	
 /* Media Queries */
 @media screen and (max-width: 767px) {
@@ -166,10 +199,10 @@ li {
     line-height: 200px; 
 }
 .cb-slideshow li:nth-child(1) span { 
-    background-image: url(../images/1.jpg) 
+    background-image: url(../images/logo.svg) 
 }
 .cb-slideshow li:nth-child(2) span { 
-    background-image: url(../images/2.jpg);
+    background-image: url(../images/1.jpg);
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
@@ -177,7 +210,7 @@ li {
     animation-delay: 6s; 
 }
 .cb-slideshow li:nth-child(3) span { 
-    background-image: url(../images/logo.svg);
+    background-image: url(../images/2.jpg);
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
