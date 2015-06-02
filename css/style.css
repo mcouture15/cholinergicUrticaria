@@ -103,6 +103,11 @@ li {
 	margin-right:40px;
 	float: right;
 }
+#logo {
+	margin-left: 40px;
+	position: relative;
+	float: left;
+}
 	
 html, body, #container { height: 100%; }
 body > #container { height: auto; min-height: 100%; }	
@@ -113,9 +118,9 @@ ul#footer {
  z-index: 1;
  height: 3em;
  margin-top: -3em;
- font-size: 14px;
+ font-size: 11px;
  text-align: center;
- padding: 10px 0 0 0;
+ padding: 20px 0 0 0;
  background-color: black;
  color: white;
 }
