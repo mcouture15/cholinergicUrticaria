@@ -33,7 +33,7 @@ body{
 	background: #000;
 	font-weight: 400;
 	font-size: 15px;
-	color: #aa3e03;
+	color: white;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
@@ -74,7 +74,7 @@ li {
 		transition: 0.2s color linear;
 	}
 	#left a:hover {
-		color: gray;
+		color: #bdbdbd;
 	}
 #center {
     padding: 0 5px 0 5px;
@@ -97,7 +97,7 @@ li {
 	transition: 0.2s background-color linear;
 }
 	#right:hover {
-		background: gray;
+		background: #bdbdbd;
 	}
 #contact {
 	margin-right:40px;
@@ -120,12 +120,18 @@ ul#footer {
  margin-top: -3em;
  font-size: 11px;
  text-align: center;
- padding: 20px 0 0 0;
+ padding: 0px 0 0 0;
  background-color: black;
  color: white;
 }
 
 #content { padding-bottom: 3em; }
+
+#section {
+	margin-top:10%;
+	margin-left:10%;
+	margin-bottom: 10%;
+}
 
 /*footer {
 	position: relative;
