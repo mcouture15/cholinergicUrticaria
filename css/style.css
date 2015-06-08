@@ -47,6 +47,19 @@ a{
 	-moz-transition: 0.2s color linear;
 	transition: 0.2s color linear;
 }
+
+#top {
+	margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 20px;
+    padding: 20px;
+    background: black;
+    position: fixed;
+    z-index: 10;
+    float: center;
+}
+
 ul#menu {
 	text-transform: uppercase;
 	text-align: center;
@@ -128,10 +141,34 @@ ul#footer {
 #content { padding-bottom: 3em; }
 
 #section {
-	margin-top:10%;
-	margin-left:10%;
-	margin-bottom: 10%;
+	margin-top:5%;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	width: 70%;
+	background-color: white;
+	padding: 15px 15px 15px 15px;
 }
+	#section h1 {
+		font-size: 20px;
+		color: black;
+		padding: 15px 15px 15px 15px;
+	}
+	#section h2 {
+		font-size: 16px;
+		color: black;
+		padding: 15px 15px 15px 15px;
+	}
+	#section h3 {
+		font-size: 12px;
+		color: black;
+		padding: 0px 0px 0px 0px;
+	}
+	#section p {
+		color: black;
+		font-size: 12px;
+		padding: 15px 15px 15px 15px;
+	}
 
 /*footer {
 	position: relative;
