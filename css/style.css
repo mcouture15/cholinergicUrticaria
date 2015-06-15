@@ -73,6 +73,9 @@ ul#menu {
     position: fixed;
     z-index: 10;
     font-size: 14px;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
 }
 li {
     display:inline;    
@@ -140,6 +143,9 @@ ul#footer {
  padding: 10px 10px 10px 10px;
  background-color: black;
  color: white;
+ border-top-style: solid;
+ border-top-color: gray;
+ border-top-width: 1px;
 }
 
 #content { padding-bottom: 3em; }
