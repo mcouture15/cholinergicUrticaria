@@ -130,7 +130,7 @@ body > #container { height: auto; min-height: 100%; }
 
 ul#footer {
  clear: both;
- position: fixed;
+ position: relative;
  width: 100%;
  z-index: 1;
  height: 20px;
