@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.4.2"
+  },
+  "applications": {
+    "_default": {
+      "link": "CUF"
+    },
+    "abGolfTournament": {
+      "applicationId": "qCUFX3elaNOUb2sOeGHLJmsl1WChXZHwniSYTeLI",
+      "masterKey": "UBsewl7YjqVdJAMu1ZEzqxuiCiBjouUGVAzg0cpG"
+    }
+  }
+}

@@ -10,7 +10,15 @@
         <meta name="author" content="" />
         <link rel="shortcut icon" href="images/favicon.ico"> 
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/sprite-navigation-black.css" />
 		<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+		<script src="https://checkout.stripe.com/checkout.js"></script>
+		<script type="text/javascript" src="js/lib/spin.min.js"></script>
+		<script type="text/javascript" src="js/lib/jquery.spin.js"></script>
+		<script type="text/javascript" src="js/lib/iscroll.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
     </head>
     <body id="page">
     <div id="container">
@@ -25,7 +33,11 @@
 
 			<li id="center"></li>
 			
-			<li id="right"><a href="#">Donate Now</a></li>
+			
+				<div>
+					<button type="button" id="buyTicket">Donate Now</button>
+				</div>
+
 		</ul>
         <ul class="cb-slideshow">
             <li><span>Image 01</span><div><h3></h3></div></li>
@@ -42,7 +54,35 @@
     	<li id="center">Copyright &copy; Cholinergic Urticaria Foundation, 2015</li>
     	<li id="contact"><a href="">Contact Us</a></li>
     </footer>
-        
+    <div id="purchaseOverlay">
+			<div id="purchaseContent">
+				<a href="#" id="purchaseClose"></a>
+				<h7>Enter Name</h4>
+				<div id="extraInfo">
+					<div class="left">
+						<input id="firstName" type="text" placeholder="First Name">
+					</div>
+					<div class="right">
+						<input id="lastName" type="text" placeholder="Last Name">
+					</div>
+				</div>
+				<h7>Select Donation Class</h4>
+				<div class="quantityContainer">
+					<div class="disabled quantityChange noLeftMargin">
+						<div class="icon-navigation-black icon-navigation-black-ic_expand_more_black_24dp" id="decreaseGolf"></div>
+					</div>
+					<div class="qVal" id="golf"><p>0</p></div>
+					<div class="quantityChange noRightMargin">
+						<div class="icon-navigation-black icon-navigation-black-ic_expand_less_black_24dp" id="increaseGolf"></div>
+					</div>
+				</div>
+				<div id="purchaseBtnContainer">
+					<button id="purchase" class="disabled" disabled="true">Donate</button>
+				</div>
+			</div>
+			<a id="sslSeal" href="https://www.positivessl.com" style="font-family: arial; font-size: 10px; color: #212121; text-decoration: none;"><img src="https://www.positivessl.com/images-new/PositiveSSL_tl_trans.png" alt="Positive SSL on a transparent background" title="Positive SSL on a transparent background" border="0" /></a>
+		</div>  
     </body>
     
 </html>
+
