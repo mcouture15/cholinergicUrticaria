@@ -108,7 +108,10 @@ li {
 		padding 5px 0 0 0;
 	}
 #menu button {
-	background: none;
+	font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	background: black;
+	position: relative;
+	z-index: 10;
 	outline: 0;
 	font-size: 16px;
 	border: 1px solid #fff;
