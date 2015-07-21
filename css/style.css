@@ -118,11 +118,9 @@ li {
 	padding: 4px 10px;
 	cursor: pointer;
 	color: #fff;
-    float: right;
-    margin-right:5%;
-    -webkit-transition: 0.2s background-color linear;
-	-moz-transition: 0.2s background-color linear;
 	transition: 0.2s background-color linear;
+	float: right;
+	right: 50px;
 }
 	#menu button:hover {
 		background: #bdbdbd;
@@ -132,9 +130,11 @@ li {
 	float: right;
 }
 #logo {
-	margin-left: 40px;
-	position: relative;
+	position: absolute;
 	float: left;
+	top: 6px;
+	bottom: 0;
+	left: 40px;
 }
 	
 html, body, #container { height: 100%; }
@@ -167,6 +167,8 @@ ul#footer {
 	width: 70%;
 	background-color: white;
 	padding: 15px 15px 15px 15px;
+	z-index:10000;
+	position: relative;
 }
 	#section h1 {
 		font-size: 20px;
