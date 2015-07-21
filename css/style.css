@@ -126,8 +126,11 @@ li {
 		background: #bdbdbd;
 	}
 #contact {
-	margin-right:40px;
+	position: absolute;
 	float: right;
+	top: 6px;
+	bottom: 0;
+	right: 40px;
 }
 #logo {
 	position: absolute;
