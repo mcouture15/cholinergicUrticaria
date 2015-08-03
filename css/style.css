@@ -141,8 +141,6 @@ li {
 }
 
 #homesection {
-	margin-left:auto;
-	margin-right: auto;
 	margin-bottom: 40px;
 	width: 100%;
 	background-color: white;
@@ -155,6 +153,21 @@ li {
 		font-size: 12px;
 		text-align: center;
 	}
+
+#homeButtons {
+	padding: 0px;
+	display: block;
+	text-align: center;
+}
+
+#homeButtons li {
+	display:inline-block;
+	height: 300px;
+	width: 300px;
+	padding: 0 10px 0 10px;
+}	
+
+
 	
 html, body, #container { height: 100%; }
 body > #container { height: auto; min-height: 100%; }	
@@ -178,7 +191,7 @@ ul#footer {
 
 #twitter {
 	width: 100%;
-	height: 20px;
+	height: 30px;
 	background-color: black;
 	z-index: 1;
 	position: relative;
@@ -187,11 +200,12 @@ ul#footer {
 
 #toplogo {
 	width: 100%;
-	height: 20px;
+	height: 55px;
 	background-color: black;
 	z-index: 1;
 	position: relative;
 	text-align: center;
+	padding-top: 5px;
 }
 
 #content { padding-bottom: 3em; }
