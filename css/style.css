@@ -42,6 +42,13 @@ body{
 	color: white;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	background: url(../back.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	min-width: cover;
+	margin: 0;
 }
 .ie7 body{
 	overflow:hidden;
@@ -72,12 +79,12 @@ ul#menu {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 20px;
+    height: 60px;
     list-style: none;
     padding: 20px;
     background: black;
-    position: relative;
-    z-index: 10;
+    position: fixed;
+    z-index: 1000;
     font-size: 14px;
     border-bottom-style: solid;
     border-bottom-color: gray;
@@ -111,7 +118,7 @@ li {
 	font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 	background: black;
 	position: relative;
-	z-index: 10;
+	z-index: 1000;
 	outline: 0;
 	font-size: 16px;
 	border: 1px solid #fff;
@@ -143,10 +150,10 @@ li {
 #homesection {
 	margin-bottom: 40px;
 	width: 100%;
-	background-color: white;
 	padding: 15px 15px 15px 15px;
 	z-index:10000;
 	position: relative;
+	background-color: #F0F0F0;
 }
 	#homesection p {
 		color: black;
@@ -200,12 +207,12 @@ ul#footer {
 
 #toplogo {
 	width: 100%;
-	height: 55px;
+	height: 40px;
 	background-color: black;
-	z-index: 1;
+	z-index: 1000;
 	position: relative;
 	text-align: center;
-	padding-top: 5px;
+	padding-top: 0px;
 }
 
 #content { padding-bottom: 3em; }
@@ -216,9 +223,7 @@ ul#footer {
 	margin-right: auto;
 	margin-bottom: 5%;
 	width: 70%;
-	background-color: white;
 	padding: 15px 15px 15px 15px;
-	z-index:10000;
 	position: relative;
 }
 	#section h1 {
