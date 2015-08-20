@@ -22,6 +22,10 @@ ol,ul {
 h1,h2,h3,h4,h5,h6 {
 	font-size:100%;
 	font-weight:normal;
+	font-size: 16px;
+	color: black;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 h7 {
 	font-size: 16px;
@@ -217,12 +221,26 @@ ul#footer {
 
 #content { padding-bottom: 3em; }
 
+#sidemenu {
+	float: left;
+	width: 15%;
+	margin-top: 5%;
+	padding-top: 50px;
+}
+	#sidemenu p {
+		
+		font-size: 12px bold;
+		color: black;
+		padding: 5px 0 10px 50px;
+	}
+
+
 #section {
 	margin-top:5%;
-	margin-left:auto;
+	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 5%;
-	width: 70%;
+	width: 75%;
 	padding: 15px 15px 15px 15px;
 	position: relative;
 }
@@ -243,7 +261,7 @@ ul#footer {
 	}
 	#section p {
 		color: black;
-		font-size: 12px;
+		font-size: 14px;
 		padding: 15px 15px 15px 15px;
 	}
 
@@ -499,13 +517,13 @@ ul#footer {
 	display: none;
 	background-color: rgba(0,0,0,0.5);
 	position: fixed;
-	top: 0;
+	top: 100px;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	height: 100%;
 	width: 100%;
-	z-index: 2;
+	z-index: 100000;
 	opacity: 0;
 
 	-webkit-transition: 500ms opacity ease;
