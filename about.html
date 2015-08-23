@@ -2,15 +2,23 @@
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Cholinergic Urticaria Foundation</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <meta name="author" content="" />
-        <link rel="shortcut icon" href="images/favicon.ico"> 
+        <link rel="shortcut icon" href="images/favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/sprite-navigation-black.css" />
+		<!-- <script type="text/javascript" src="js/modernizr.custom.86080.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+		<script src="https://checkout.stripe.com/checkout.js"></script>
+		<!-- <script type="text/javascript" src="js/lib/spin.min.js"></script> -->
+		<!-- <script type="text/javascript" src="js/lib/jquery.spin.js"></script> -->
+		<!-- <script type="text/javascript" src="js/lib/iscroll.js"></script> -->
+		<script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
     
@@ -74,6 +82,34 @@
     </div>
     
     </footer>
+    <div id="purchaseOverlay">
+			<div id="purchaseContent">
+				<a href="#" id="purchaseClose"></a>
+				<h4>Enter Name</h4>
+				<div id="extraInfo">
+					<div class="left">
+						<input id="firstName" type="text" placeholder="First Name">
+					</div>
+					<div class="right">
+						<input id="lastName" type="text" placeholder="Last Name">
+					</div>
+				</div>
+				<h4>Select Donation Amount in Dollars</h4>
+				<div class="quantityContainer">
+					<div class="disabled quantityChange noLeftMargin">
+						<div class="icon-navigation-black icon-navigation-black-ic_expand_more_black_24dp" id="decrease"></div>
+					</div>
+					<div class="qVal" id="amountContainer"><span>$</span> <p id="amount">0</p><span>.00</span></div>
+					<div class="quantityChange noRightMargin">
+						<div class="icon-navigation-black icon-navigation-black-ic_expand_less_black_24dp" id="increase"></div>
+					</div>
+				</div>
+				<div id="purchaseBtnContainer">
+					<button id="purchase" class="disabled" disabled="true">Donate</button>
+				</div>
+			</div>
+			<a id="sslSeal" href="https://www.positivessl.com" style="font-family: arial; font-size: 10px; color: #212121; text-decoration: none;"><img src="https://www.positivessl.com/images-new/PositiveSSL_tl_trans.png" alt="Positive SSL on a transparent background" title="Positive SSL on a transparent background" border="0" /></a>
+		</div>
         
     </body>
     
