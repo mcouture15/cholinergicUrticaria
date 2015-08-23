@@ -8,7 +8,7 @@
     font-weight: normal;
     font-style: normal;
 }
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
 	margin:0;
 	padding:0;
 }
@@ -46,7 +46,7 @@ body{
 	color: white;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	background: url(../back.jpg) no-repeat center center fixed; 
+	background: url(../back.jpg) no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -95,11 +95,11 @@ ul#menu {
     border-bottom-width: 1px;
 }
 li {
-    display:inline;    
+    display:inline;
 }
 #left {
     margin-left:40px;
-    float: left;       
+    float: left;
 }
 	#left a {
 		-webkit-transition: 0.2s color linear;
@@ -113,7 +113,7 @@ li {
     padding: 0 5px 0 5px;
     position: relative;
     width: 100px;
-    height: auto;   
+    height: auto;
 }
 	#center p {
 		padding 5px 0 0 0;
@@ -176,12 +176,12 @@ li {
 	height: 300px;
 	width: 300px;
 	padding: 0 10px 0 10px;
-}	
+}
 
 
-	
+
 html, body, #container { height: 100%; }
-body > #container { height: auto; min-height: 100%; }	
+body > #container { height: auto; min-height: 100%; }
 
 ul#footer {
  clear: both;
@@ -228,7 +228,7 @@ ul#footer {
 	padding-top: 50px;
 }
 	#sidemenu p {
-		
+
 		font-size: 12px bold;
 		color: black;
 		padding: 5px 0 10px 50px;
@@ -275,7 +275,7 @@ ul#footer {
 	font-size: 14px;
 	bottom: 0;
 }	*/
-	
+
 /* Media Queries */
 @media screen and (max-width: 767px) {
 	.container > header{
@@ -289,19 +289,19 @@ ul#footer {
 }
 
 .cb-slideshow,
-.cb-slideshow:after { 
+.cb-slideshow:after {
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: 0; 
+    z-index: 0;
 }
-.cb-slideshow:after { 
+.cb-slideshow:after {
     content: '';
-    background: transparent url(../images/pattern.png) repeat top left; 
+    background: transparent url(../images/pattern.png) repeat top left;
 }
-.cb-slideshow li span { 
+.cb-slideshow li span {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -318,9 +318,9 @@ ul#footer {
     -moz-animation: imageAnimation 24s linear infinite 0s;
     -o-animation: imageAnimation 24s linear infinite 0s;
     -ms-animation: imageAnimation 24s linear infinite 0s;
-    animation: imageAnimation 24s linear infinite 0s; 
+    animation: imageAnimation 24s linear infinite 0s;
 }
-.cb-slideshow li div { 
+.cb-slideshow li div {
     z-index: 1000;
     position: absolute;
     bottom: 30px;
@@ -333,94 +333,94 @@ ul#footer {
     -moz-animation: titleAnimation 24s linear infinite 0s;
     -o-animation: titleAnimation 24s linear infinite 0s;
     -ms-animation: titleAnimation 24s linear infinite 0s;
-    animation: titleAnimation 24s linear infinite 0s; 
+    animation: titleAnimation 24s linear infinite 0s;
 }
-.cb-slideshow li div h3 { 
+.cb-slideshow li div h3 {
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
     font-size: 240px;
     padding: 0;
-    line-height: 200px; 
+    line-height: 200px;
 }
-.cb-slideshow li:nth-child(1) span { 
-    background-image: url(../images/logo.svg) 
+.cb-slideshow li:nth-child(1) span {
+    background-image: url(../images/logo.svg)
 }
-.cb-slideshow li:nth-child(2) span { 
+.cb-slideshow li:nth-child(2) span {
     background-image: url(../images/1.jpg);
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
     -ms-animation-delay: 6s;
-    animation-delay: 6s; 
+    animation-delay: 6s;
 }
-.cb-slideshow li:nth-child(3) span { 
+.cb-slideshow li:nth-child(3) span {
     background-image: url(../images/2.jpg);
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
     -ms-animation-delay: 12s;
-    animation-delay: 12s; 
+    animation-delay: 12s;
 }
-.cb-slideshow li:nth-child(4) span { 
+.cb-slideshow li:nth-child(4) span {
     background-image: url(../images/4.jpg);
     -webkit-animation-delay: 18s;
     -moz-animation-delay: 18s;
     -o-animation-delay: 18s;
     -ms-animation-delay: 18s;
-    animation-delay: 18s; 
+    animation-delay: 18s;
 }
-.cb-slideshow li:nth-child(5) span { 
+.cb-slideshow li:nth-child(5) span {
     background-image: url(../images/5.jpg);
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
     -ms-animation-delay: 24s;
-    animation-delay: 24s; 
+    animation-delay: 24s;
 }
-.cb-slideshow li:nth-child(6) span { 
+.cb-slideshow li:nth-child(6) span {
     background-image: url(../images/6.jpg);
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
     -ms-animation-delay: 30s;
-    animation-delay: 30s; 
+    animation-delay: 30s;
 }
-.cb-slideshow li:nth-child(2) div { 
+.cb-slideshow li:nth-child(2) div {
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
     -ms-animation-delay: 6s;
-    animation-delay: 6s; 
+    animation-delay: 6s;
 }
-.cb-slideshow li:nth-child(3) div { 
+.cb-slideshow li:nth-child(3) div {
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
     -ms-animation-delay: 12s;
-    animation-delay: 12s; 
+    animation-delay: 12s;
 }
-.cb-slideshow li:nth-child(4) div { 
+.cb-slideshow li:nth-child(4) div {
     -webkit-animation-delay: 18s;
     -moz-animation-delay: 18s;
     -o-animation-delay: 18s;
     -ms-animation-delay: 18s;
-    animation-delay: 18s; 
+    animation-delay: 18s;
 }
-.cb-slideshow li:nth-child(5) div { 
+.cb-slideshow li:nth-child(5) div {
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
     -ms-animation-delay: 24s;
-    animation-delay: 24s; 
+    animation-delay: 24s;
 }
-.cb-slideshow li:nth-child(6) div { 
+.cb-slideshow li:nth-child(6) div {
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
     -ms-animation-delay: 30s;
-    animation-delay: 30s; 
+    animation-delay: 30s;
 }
 /* Animation for the slideshow images */
-@-webkit-keyframes imageAnimation { 
+@-webkit-keyframes imageAnimation {
     0% { opacity: 0;
     -webkit-animation-timing-function: ease-in; }
     8% { opacity: 1;
@@ -429,7 +429,7 @@ ul#footer {
     25% { opacity: 0 }
     100% { opacity: 0 }
 }
-@-moz-keyframes imageAnimation { 
+@-moz-keyframes imageAnimation {
     0% { opacity: 0;
     -moz-animation-timing-function: ease-in; }
     8% { opacity: 1;
@@ -438,7 +438,7 @@ ul#footer {
     25% { opacity: 0 }
     100% { opacity: 0 }
 }
-@-o-keyframes imageAnimation { 
+@-o-keyframes imageAnimation {
     0% { opacity: 0;
     -o-animation-timing-function: ease-in; }
     8% { opacity: 1;
@@ -447,7 +447,7 @@ ul#footer {
     25% { opacity: 0 }
     100% { opacity: 0 }
 }
-@-ms-keyframes imageAnimation { 
+@-ms-keyframes imageAnimation {
     0% { opacity: 0;
     -ms-animation-timing-function: ease-in; }
     8% { opacity: 1;
@@ -456,7 +456,7 @@ ul#footer {
     25% { opacity: 0 }
     100% { opacity: 0 }
 }
-@keyframes imageAnimation { 
+@keyframes imageAnimation {
     0% { opacity: 0;
     animation-timing-function: ease-in; }
     8% { opacity: 1;
@@ -466,35 +466,35 @@ ul#footer {
     100% { opacity: 0 }
 }
 /* Animation for the title */
-@-webkit-keyframes titleAnimation { 
+@-webkit-keyframes titleAnimation {
     0% { opacity: 0 }
     8% { opacity: 1 }
     17% { opacity: 1 }
     19% { opacity: 0 }
     100% { opacity: 0 }
 }
-@-moz-keyframes titleAnimation { 
+@-moz-keyframes titleAnimation {
     0% { opacity: 0 }
     8% { opacity: 1 }
     17% { opacity: 1 }
     19% { opacity: 0 }
     100% { opacity: 0 }
 }
-@-o-keyframes titleAnimation { 
+@-o-keyframes titleAnimation {
     0% { opacity: 0 }
     8% { opacity: 1 }
     17% { opacity: 1 }
     19% { opacity: 0 }
     100% { opacity: 0 }
 }
-@-ms-keyframes titleAnimation { 
+@-ms-keyframes titleAnimation {
     0% { opacity: 0 }
     8% { opacity: 1 }
     17% { opacity: 1 }
     19% { opacity: 0 }
     100% { opacity: 0 }
 }
-@keyframes titleAnimation { 
+@keyframes titleAnimation {
     0% { opacity: 0 }
     8% { opacity: 1 }
     17% { opacity: 1 }
@@ -506,10 +506,10 @@ ul#footer {
 	opacity: 1;
 }
 
-@media screen and (max-width: 1140px) { 
+@media screen and (max-width: 1140px) {
     .cb-slideshow li div h3 { font-size: 140px }
 }
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 600px) {
     .cb-slideshow li div h3 { font-size: 80px }
 }
 
@@ -677,6 +677,7 @@ ul#footer {
 	}
 
 	.quantityContainer > div {
+    color: black;
 		display: inline-block;
 		margin: 0 15px;
 		background: white;
@@ -741,13 +742,22 @@ ul#footer {
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 	}
 
-	.qVal p {
-		font-size: 35px;
-		margin: 0;
-		line-height: 50px;
-	}
+  #purchaseOverlay h4 {
+    margin: 20px;
+  }
 
-	#purchaseBtnContainer {
+  #amountContainer {
+    width: 100px;
+  }
+
+  .qVal > * {
+    font-size: 35px;
+    margin: 0;
+    line-height: 45px;
+    display: inline-block;
+  }
+
+  #purchaseBtnContainer {
 		width: 85%;
 		position: relative;
 		margin: 20px auto;

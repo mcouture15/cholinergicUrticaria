@@ -32,27 +32,25 @@ $(function() {
 
 	function chargeCard(token) {
 		// activate spinner
-		$('#spinner').removeClass('hidden').spin();
 		// Use the token to create the charge with a server-side script.
 		Parse.Cloud.run('charge', {
 			amount: amount,
 			email: token.email,
 			firstName: firstName,
 			lastName: lastName,
-			quantityGolf: qGolf,
-			quantityNoGolf: qNoGolf,
 			token: token.id
 		}, {
 			success: function(res) {
-				$('#spinner').addClass('hidden').spin(false);
-				toastr.success('Purchase Success! Here is your Transaction ID:</br>' +
-					res + '</br></br>Don\'t worry we\'ve also sent you an email.'
-				);
+				// toastr.success('Purchase Success! Here is your Transaction ID:</br>' +
+				// 	res + '</br></br>Don\'t worry we\'ve also sent you an email.'
+				// );
+				alert('Success, here\'s your transaction id: ' + res);
 			},
 			error: function(err) {
-				$('#spinner').addClass('hidden').spin(false);
-				toastr.error('An error occured, please try again');
+				// $('#spinner').addClass('hidden').spin(false);
+				// toastr.error('An error occured, please try again');
 				console.error('cloud_err=', err);
+				alert('An error occured');
 			}
 		});
 	}
@@ -82,30 +80,14 @@ $(function() {
 		$('.quantityChange').on('click', function(e) {
 			if (e.target.classList.contains('disabled') || e.target.parentElement.classList.contains('disabled')) return;
 
-			if (e.target.id == 'increaseGolf') {
-				var val = parseInt($('#golf p').text());
-				plus('#golf', val);
-			} else if (e.target.id == 'decreaseGolf') {
-				var val = parseInt($('#golf p').text());
-				minus('#golf', val);
-			} else if (e.target.id == 'increaseNoGolf') {
-				var val = parseInt($('#noGolf p').text());
-				plus('#noGolf', val);
-			} else if (e.target.id == 'decreaseNoGolf') {
-				var val = parseInt($('#noGolf p').text());
-				minus('#noGolf', val);
-			} else if (e.target.children[0].id == 'increaseGolf') {
-				var val = parseInt($('#golf p').text());
-				plus('#golf', val);
-			} else if (e.target.children[0].id == 'decreaseGolf') {
-				var val = parseInt($('#golf p').text());
-				minus('#golf', val);
-			} else if (e.target.children[0].id == 'increaseNoGolf') {
-				var val = parseInt($('#noGolf p').text());
-				plus('#noGolf', val);
+			if (e.target.id == 'increase') {
+				plus(parseInt($('#amount').text()));
+			} else if (e.target.id == 'decrease') {
+				minus(parseInt($('#amount').text()));
+			} else if (e.target.children[0].id == 'increase') {
+				plus(parseInt($('#amount').text()));
 			} else {
-				var val = parseInt($('#noGolf p').text());
-				minus('#noGolf', val);
+				minus(parseInt($('#amount').text()));
 			}
 		});
 
@@ -136,9 +118,7 @@ $(function() {
 					$('#purchaseContent').removeClass('shake');
 				}, 401);
 			} else {
-				qGolf = parseInt($('#golf p').text());
-				qNoGolf = parseInt($('#noGolf p').text());
-				amount = Math.round(100 * (50*qGolf + 30*qNoGolf));
+				amount = 100 * $('#amount').text();
 				firstName = $('#firstName').val();
 				lastName = $('#lastName').val();
 
@@ -154,21 +134,19 @@ $(function() {
 			}
 	}
 
-	function plus(e, val) {
-		$(e + ' p').text(val + 1);
+	function plus(val) {
+		$("#amount").text(val + 1);
 		if (val == 0) {
-			$(e).prev().removeClass('disabled');
+			$(".quantityChange.noLeftMargin").removeClass('disabled');
 			$('#purchase').removeClass('disabled').attr('disabled', false);
 		}
 	}
 
-	function minus(e, val) {
-		$(e + ' p').text(val - 1);
+	function minus(val) {
+		$("#amount").text(val - 1);
 		if (val == 1) {
-			$(e).prev().addClass('disabled');
-			if ($('.quantityChange.noLeftMargin.disabled').length == 2) {
-				$('#purchase').addClass('disabled').attr('disabled', true);
-			}
+			$('#amount').prev().addClass('disabled');
+			$('#purchase').addClass('disabled').attr('disabled', true);
 		}
 	}
 
@@ -245,8 +223,8 @@ $(function() {
 
 	setupClicks();
 	setupStripe();
-	setupToastr();
-	setupCarousel();
+	// setupToastr();
+	// setupCarousel();
 
 	console.log('ready');
 });
