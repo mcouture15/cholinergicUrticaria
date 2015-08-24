@@ -140,6 +140,8 @@ li {
 	#menu button:hover {
 		background: #bdbdbd;
 	}
+	
+
 #contact {
 	position: absolute;
 	float: right;
@@ -251,12 +253,12 @@ ul#footer {
 	#section h1 {
 		font-size: 20px;
 		color: black;
-		padding: 15px 15px 15px 15px;
+		padding: 5px 15px 5px 15px;
 	}
 	#section h2 {
 		font-size: 16px;
 		color: black;
-		padding: 15px 15px 15px 15px;
+		padding: 5px 15px 5px 15px;
 	}
 	#section h3 {
 		font-size: 12px;
@@ -266,7 +268,24 @@ ul#footer {
 	#section p {
 		color: black;
 		font-size: 14px;
-		padding: 15px 15px 15px 15px;
+		padding: 10px 15px 10px 15px;
+	}
+	#section button{
+		font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+		position: relative;
+		z-index: 1000;
+		outline: 0;
+		font-size: 16px;
+		border: 1px solid black;
+		padding: 4px 10px;
+		cursor: pointer;
+		color: black;
+		transition: 0.2s background-color linear;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#section button:hover {
+		background: #bdbdbd;
 	}
 
 /*footer {
